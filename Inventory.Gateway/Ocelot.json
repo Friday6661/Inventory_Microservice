@@ -1,0 +1,136 @@
+{
+
+    "Routes": [
+        //"ItemCategoryAPI": "https://localhost:7094"
+        {
+            "DownstreamPathTemplate": "api/itemcategory",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7094
+                }
+            ],
+            "UpstreamPathTemplate": "api/itemcategory",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "api/itemcategory/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7094
+                }
+            ],
+            "UpstreamPathTemplate": "api/itemcategory",
+            "UpstreamHttpMethod": [ "Get", "DELETE" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "api/itemcategory/",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7094
+                }
+            ],
+            "UpstreamPathTemplate": "api/itemcategory",
+            "UpstreamHttpMethod": [ "POST", "PUT" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer"
+            }
+        },
+
+        //"ItemAPI": "https://localhost:7244"
+        {
+            "DownstreamPathTemplate": "api/item",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7244
+                }
+            ],
+            "UpstreamPathTemplate": "api/item",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "api/item/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7244
+                }
+            ],
+            "UpstreamPathTemplate": "api/item",
+            "UpstreamHttpMethod": [ "Get", "DELETE" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "api/item/",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7244
+                }
+            ],
+            "UpstreamPathTemplate": "api/item",
+            "UpstreamHttpMethod": [ "POST", "PUT" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer"
+            }
+        },
+        //"WarehouseAPI": "https://localhost:7234"
+        {
+            "DownstreamPathTemplate": "api/warehouse",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7234
+                }
+            ],
+            "UpstreamPathTemplate": "api/warehouse",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "api/warehouse/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7234
+                }
+            ],
+            "UpstreamPathTemplate": "api/warehouse",
+            "UpstreamHttpMethod": [ "Get", "DELETE" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer"
+            }
+        },
+        {
+            "DownstreamPathTemplate": "api/warehouse/",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "port": 7234
+                }
+            ],
+            "UpstreamPathTemplate": "api/warehouse",
+            "UpstreamHttpMethod": [ "POST", "PUT" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer"
+            }
+        }
+    ]
+
+}
